@@ -116,6 +116,7 @@ static void TouchscreenCalibration_SetHint(void)
   BSP_LCD_SetBackColor(LCD_COLOR_WHITE);
 
   BSP_LCD_SetFont(&Font12);
+  BSP_LCD_DisplayStringAt(0, BSP_LCD_GetYSize()/2 - 54, (uint8_t*)"Built on "__DATE__" "__TIME__"", CENTER_MODE);
   BSP_LCD_DisplayStringAt(0, BSP_LCD_GetYSize()/2 - 27, (uint8_t*)"Before using the Touchscreen", CENTER_MODE);
   BSP_LCD_DisplayStringAt(0, BSP_LCD_GetYSize()/2 - 12, (uint8_t*)"you need to calibrate it.", CENTER_MODE);
   BSP_LCD_DisplayStringAt(0, BSP_LCD_GetYSize()/2 + 3, (uint8_t*)"Press on the black circles", CENTER_MODE);
