@@ -4,7 +4,9 @@ This is a port of STMicroelectronics `LTDC_Paint` sample application for `STM32F
 
 ![ltdc_paint.jpg](ltdc_paint.jpg)
 
-Checkout sample source code and dependencies:
+## How to build
+
+### Checkout sample source code and dependencies:
 
 ```
 $ git clone https://github.com/apc-llc/LTDC_Paint
@@ -12,8 +14,6 @@ $ cd LTDC_Paint
 $ git submodule init
 $ git submodule update
 ```
-
-## How to build
 
 ### Build & install `stlink`:
 
