@@ -47,7 +47,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f429i_discovery.h"
 /* Include TouchScreen component driver */
-#include "../Components/stmpe811/stmpe811.h"   
+#include "stmpe811.h"   
    
 /** @addtogroup BSP
   * @{

@@ -45,7 +45,7 @@
 #endif 
 
 /* Includes ------------------------------------------------------------------*/
-#include "../Common/lcd.h"
+#include "lcd.h"
 
 /** @addtogroup BSP
   * @{
