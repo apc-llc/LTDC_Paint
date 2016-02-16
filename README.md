@@ -63,5 +63,5 @@ $ load
 $ run
 ```
 
-After screen calibration message, ``STM32F429I-DISCOVERY` device should display the main window of the paint program.
+After screen calibration message, the `STM32F429I-DISCOVERY` device should display the main window of the paint program.
 
