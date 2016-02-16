@@ -1,4 +1,4 @@
-## `STM32F429I-DISCOVERY` LTDC_Paint sample for Linux with GCC and Make
+## STM32F429I-DISCOVERY LTDC_Paint sample for GCC and Make
 
 This is a port of STMicroelectronics `LTDC_Paint` sample application for `STM32F429I-DISCOVERY` board. The sample originally offered for EWARM/MDK-ARM/TrueSTUDIO is adopted for compilation on Linux with GCC and GNU make. The sample presents a basic painting program with GUI on board's LCD touchscreen.
 
