@@ -1,0 +1,6 @@
+[submodule "summon-arm-toolchain"]
+	path = summon-arm-toolchain
+	url = https://github.com/apc-llc/summon-arm-toolchain.git
+[submodule "stlink"]
+	path = stlink
+	url = https://github.com/texane/stlink
