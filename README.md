@@ -1,6 +1,6 @@
-##STMicroelectronics `STM32F429I-DISCOVERY` LTDC_Paint sample for Linux with GCC and Make
+## `STM32F429I-DISCOVERY` LTDC_Paint sample for Linux with GCC and Make
 
-This is a port of STM's LTDC_Paint sample application for `STM32F429I-DISCOVERY` board. The sample originally offered for EWARM/MDK-ARM/TrueSTUDIO is adopted for compilation on Linux with GCC and GNU make. The sample presents a basic painting program with GUI on board's LCD touchscreen.
+This is a port of STMicroelectronics `LTDC_Paint` sample application for `STM32F429I-DISCOVERY` board. The sample originally offered for EWARM/MDK-ARM/TrueSTUDIO is adopted for compilation on Linux with GCC and GNU make. The sample presents a basic painting program with GUI on board's LCD touchscreen.
 
 ![ltdc_paint.jpg](ltdc_paint.jpg)
 
@@ -13,7 +13,9 @@ $ git submodule init
 $ git submodule update
 ```
 
-Build & install `stlink`:
+## How to build
+
+### Build & install `stlink`:
 
 ```
 $ cd stlink/
@@ -26,7 +28,7 @@ $ make -j12
 $ make install
 ```
 
-Build & install the GCC toolchain:
+### Build & install the GCC toolchain:
 
 ```
 $ cd summon-arm-toolchain
@@ -34,13 +36,15 @@ $ sudo apt-get install build-essential git flex bison libgmp3-dev libmpfr-dev li
 $ ./summon-arm-toolchain PREFIX=$(pwd)/../install CPUS=4
 ```
 
-Build the `LTDC_Paint` sample:
+### Build the `LTDC_Paint` sample:
 
 ```
 $ cd LTDC_Paint
 $ export PATH=$(pwd)/install/bin:$PATH
 $ make TOOLCHAIN=gnu
 ```
+
+### Debug
 
 In order to debug the `LTDC_Paint` sample on `STM32F429I-DISCOVERY` device, open another terminal and launch the gdb server plugin:
 
@@ -59,5 +63,5 @@ $ load
 $ run
 ```
 
-After screen calibration message, ``STM32F429I-DISCOVERY` device should display the main window of paint program.
+After screen calibration message, ``STM32F429I-DISCOVERY` device should display the main window of the paint program.
 
