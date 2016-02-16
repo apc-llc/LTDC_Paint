@@ -1,3 +1,14 @@
+Checkout sample source code and dependencies:
+
+```
+$ git clone https://github.com/apc-llc/LTDC_Paint
+$ cd LTDC_Paint
+$ git submodule init
+$ git submodule update
+```
+
+Build & install `stlink`:
+
 ```
 $ cd stlink/
 $ ./autogen.sh 
