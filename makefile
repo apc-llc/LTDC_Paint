@@ -19,14 +19,14 @@ MAIN += sbrk startup_stm32f429xx
 else
 ifeq (arm,$(TOOLCHAIN))
 CC = armclang
-CFLAGS = --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16
+CFLAGS = --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
 LDFLAGS =
 else
 $(error TOOLCHAIN must be provided: "$$ make TOOLCHAIN=gnu" or "$$ make TOOLCHAIN=arm")
 endif
 endif
 
-CFLAGS += -DSTM32F429xx -g -O0 -Iinclude -Iinclude/BSP -Iinclude/HAL -Iinclude/CMSIS -Iinclude/fonts -Iinclude/FatFs -Iinclude/USBH
+CFLAGS += -DSTM32F429xx -g -Ofast -ffast-math -fomit-frame-pointer -Iinclude -Iinclude/BSP -Iinclude/HAL -Iinclude/CMSIS -Iinclude/fonts -Iinclude/FatFs -Iinclude/USBH
 
 BASENAMES := \
 	$(addprefix src/, $(MAIN)) \
