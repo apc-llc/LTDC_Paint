@@ -65,3 +65,7 @@ $ run
 
 After screen calibration message, the `STM32F429I-DISCOVERY` device should display the main window of the paint program.
 
+### A note about screen calibration
+
+In order to avoid difficulties with touchscreen clicks recognition, one should not use finger during screen calibration. Use stylus or credit card.
+
